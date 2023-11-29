@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Damion&family=Poppins:wght@300;400;500;600&display=swap");
+
+*,
+body {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "Poppins";
+}
+
+body {
+	width: 100vw;
+	height: 100vh;
+	overflow-x: hidden;
+}
+
+#sidebar {
+	animation: slideInLeft 0.5s ease;
+}
+
+#imageOptions {
+	animation: slideInUp 0.5s ease;
+}
+
+#imageFilters,
+#imageTools,
+#exportImage {
+	animation: slideInRight 0.5s ease;
+}
+
+@keyframes slideInLeft {
+	from {
+		transform: translateX(-150%);
+	}
+	to {
+		opacity: 100%;
+		transform: translateX(0%);
+	}
+}
+@keyframes slideInRight {
+	from {
+		transform: translateX(150%);
+	}
+	to {
+		transform: translateX(0%);
+	}
+}
+
+@keyframes slideInUp {
+	from {
+		bottom: -4rem;
+	}
+	to {
+		bottom: 1rem;
+	}
+}

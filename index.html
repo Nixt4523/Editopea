@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editopea | Home</title>
+    <link rel="stylesheet" href="./styles/mainpage.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script defer src="./scripts/animation.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
+
+<body data-theme="light" class="bg-base-100 overflow-x-hidden">
+    <!-- Navbar -->
+    <nav class="flex items-center p-4 border-b-2 border-neutral bg-base-100">
+        <div class="flex items-center gap-2 mx-auto">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.75"
+                stroke="currentColor" class="w-8 h-8 text-neutral">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 00-2.456 2.456zM16.894 20.567L16.5 21.75l-.394-1.183a2.25 2.25 0 00-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 001.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 001.423 1.423l1.183.394-1.183.394a2.25 2.25 0 00-1.423 1.423z" />
+            </svg>
+
+            <h1 class="logo text-3xl font-medium">
+                <a href="./index.html" class="">Editopea</a>
+            </h1>
+        </div>
+    </nav>
+    <!-- Hero Section -->
+    <main id="bgCircles" class="w-screen h-full flex items-center justify-center mt-24 overflow-hidden">
+        <div class="flex flex-col items-center gap-8 w-full">
+            <h1 class="text-8xl font-bold text-neutral animate-element hideElement">Fast, Simple & Free.</h1>
+            <p class="text-2xl w-3/6 text-center opacity-50 animate-element hideElement">Editopea is a free Online Image
+                editor
+                tool. Easy to use,
+                Fast and Efficient,
+                Packed with custom Filters and User
+                Friendly Interface and Much more.</p>
+
+            <div class="w-[100%] overflow-x-hidden rounded-lg animate-element hideElement delay-100">
+                <div class="swiper mySwiper overflow-x-hidden">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide w-[80%] ">
+                            <img src="./assets/Editing.webp" class="rounded-lg" />
+                        </div>
+                        <div class="swiper-slide w-[80%]">
+                            <img src="./assets/Drawing.webp" class="rounded-lg" />
+                        </div>
+                        <div class="swiper-slide w-[80%]">
+                            <img src="./assets/Cropping.webp" class="rounded-lg" />
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <a href="./edit.html" class="btn btn-neutral mt-2 animate-element hideElement">Get Started</a>
+        </div>
+    </main>
+    <!-- Provides -->
+    <section class=" w-full p-12 mt-8 flex gap-8 flex-col items-center justify-center bg-neutral text-white h-full">
+        <div class="w-[80%] flex items-center justify-center mb-4">
+            <h1 class="text-6xl font-medium animate-element hideElement">What does it Provides?</h1>
+        </div>
+        <div class="w-[80%] flex items-center justify-center flex-col gap-12">
+            <div id="editingFeature" class="flex items-center justify-between gap-8">
+                <div class="w-1/3 flex flex-col gap-4 animate-element hideElement">
+                    <h1 class="text-6xl font-medium ">All necessary Image Editing Features</h1>
+                    <p class="text-2xl w-2/3 opacity-50">Contains all necessary features and tools for image editing
+                    </p>
+                </div>
+                <img src="./assets/Editing.webp" alt="" class="w-1/2 rounded-lg animate-element hideElement delay-100">
+            </div>
+            <div id="drawingFeature" class="flex items-center justify-between gap-8">
+                <img src="./assets/Drawing.webp" alt="" class="w-1/2 rounded-lg animate-element hideElement delay-100">
+                <div class="w-1/3 flex flex-col gap-4 text-end items-end animate-element hideElement">
+                    <h1 class="text-6xl font-medium ">Ability to Draw on your Image</h1>
+                    <p class="text-2xl w-2/3 opacity-50">Contains tools that help's you to Draw on your Image
+                    </p>
+                </div>
+            </div>
+            <div id="croppingFeature" class="flex items-center justify-between gap-8">
+                <div class="w-1/3 flex flex-col gap-4 animate-element hideElement">
+                    <h1 class="text-6xl font-medium ">Crop your Image as you want..!</h1>
+                    <p class="text-2xl w-2/3 opacity-50">Provides tools where you can crop your Image as you want</p>
+                </div>
+                <img src="./assets/Cropping.webp" alt="" class="w-1/2 rounded-lg animate-element hideElement delay-100">
+            </div>
+        </div>
+
+    </section>
+    <!-- Features -->
+    <section class="w-full p-8 mt-6 flex items-center justify-center">
+        <div class="w-[60%] flex flex-col gap-2">
+            <h1 class="text-6xl font-bold text-neutral animate-element hideElement">Features</h1>
+            <div class="flex w-fll items-center justify-between gap-4 mt-4">
+                <div
+                    class="text-neutral w-full rounded-lg p-12 flex flex-col items-center justify-center group animate-element hideElement">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                        class="w-28 h-28 group-hover:scale-125 transition-transform">
+                        <path fill-rule="evenodd"
+                            d="M12.963 2.286a.75.75 0 00-1.071-.136 9.742 9.742 0 00-3.539 6.177A7.547 7.547 0 016.648 6.61a.75.75 0 00-1.152-.082A9 9 0 1015.68 4.534a7.46 7.46 0 01-2.717-2.248zM15.75 14.25a3.75 3.75 0 11-7.313-1.172c.628.465 1.35.81 2.133 1a5.99 5.99 0 011.925-3.545 3.75 3.75 0 013.255 3.717z"
+                            clip-rule="evenodd" />
+                    </svg>
+
+                    <h1 class="font-medium text-3xl">Free to use</h1>
+                    <h1 class="text-center mt-2 opacity-50">Free to use for Everyone, for any purpose</h1>
+                </div>
+
+                <div
+                    class="text-neutral w-full rounded-lg p-12 flex flex-col items-center justify-center group animate-element hideElement delay-[100ms]">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                        class="w-28 h-28 group-hover:scale-125 transition-transform">
+                        <path fill-rule="evenodd"
+                            d="M7.5 6a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM3.751 20.105a8.25 8.25 0 0116.498 0 .75.75 0 01-.437.695A18.683 18.683 0 0112 22.5c-2.786 0-5.433-.608-7.812-1.7a.75.75 0 01-.437-.695z"
+                            clip-rule="evenodd" />
+                    </svg>
+
+
+                    <h1 class="font-medium text-3xl">User Friendly</h1>
+                    <h1 class="text-center mt-2 opacity-50">Designed & Developed Simply and User Friendly</h1>
+                </div>
+                <div
+                    class="text-neutral w-full rounded-lg p-12 flex flex-col items-center justify-center group animate-element hideElement delay-[200ms]">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                        class="w-28 h-28 group-hover:scale-125 transition-transform">
+                        <path fill-rule="evenodd"
+                            d="M2.25 4.125c0-1.036.84-1.875 1.875-1.875h5.25c1.036 0 1.875.84 1.875 1.875V17.25a4.5 4.5 0 11-9 0V4.125zm4.5 14.25a1.125 1.125 0 100-2.25 1.125 1.125 0 000 2.25z"
+                            clip-rule="evenodd" />
+                        <path
+                            d="M10.719 21.75h9.156c1.036 0 1.875-.84 1.875-1.875v-5.25c0-1.036-.84-1.875-1.875-1.875h-.14l-8.742 8.743c-.09.089-.18.175-.274.257zM12.738 17.625l6.474-6.474a1.875 1.875 0 000-2.651L15.5 4.787a1.875 1.875 0 00-2.651 0l-.1.099V17.25c0 .126-.003.251-.01.375z" />
+                    </svg>
+
+
+                    <h1 class="font-medium text-3xl">Custom Filters</h1>
+                    <h1 class="text-center mt-2 opacity-50">Free to use Filtes for your Images for Quick Edits</h1>
+                </div>
+            </div>
+            <div class="flex w-fll items-center justify-between gap-4 mt-4">
+                <div
+                    class="text-neutral w-full rounded-lg p-12 flex flex-col items-center justify-center group animate-element hideElement delay-[300ms]">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                        class="w-28 h-28 group-hover:scale-125 transition-transform">
+                        <path fill-rule="evenodd"
+                            d="M1.5 6a2.25 2.25 0 012.25-2.25h16.5A2.25 2.25 0 0122.5 6v12a2.25 2.25 0 01-2.25 2.25H3.75A2.25 2.25 0 011.5 18V6zM3 16.06V18c0 .414.336.75.75.75h16.5A.75.75 0 0021 18v-1.94l-2.69-2.689a1.5 1.5 0 00-2.12 0l-.88.879.97.97a.75.75 0 11-1.06 1.06l-5.16-5.159a1.5 1.5 0 00-2.12 0L3 16.061zm10.125-7.81a1.125 1.125 0 112.25 0 1.125 1.125 0 01-2.25 0z"
+                            clip-rule="evenodd" />
+                    </svg>
+
+
+                    <h1 class="font-medium text-3xl">All Formats Supported</h1>
+                    <h1 class="text-center mt-2 w-2/3 opacity-50">You can import almost all types of Images and can Edit
+                        them without any problem</h1>
+                </div>
+                <div
+                    class="text-neutral w-full rounded-lg p-12 flex flex-col items-center justify-center group animate-element hideElement delay-[400ms]">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                        class="w-28 h-28 group-hover:scale-125 transition-transform">
+                        <path fill-rule="evenodd"
+                            d="M19.5 21a3 3 0 003-3V9a3 3 0 00-3-3h-5.379a.75.75 0 01-.53-.22L11.47 3.66A2.25 2.25 0 009.879 3H4.5a3 3 0 00-3 3v12a3 3 0 003 3h15zm-6.75-10.5a.75.75 0 00-1.5 0v4.19l-1.72-1.72a.75.75 0 00-1.06 1.06l3 3a.75.75 0 001.06 0l3-3a.75.75 0 10-1.06-1.06l-1.72 1.72V10.5z"
+                            clip-rule="evenodd" />
+                    </svg>
+
+                    <h1 class="font-medium text-3xl">Easy & Fast Downloads</h1>
+                    <h1 class="text-center mt-2 w-2/3 opacity-50">Download edited image Super Fast and without any loss
+                        of Quality of Imag
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="w-fll bg-neutral p-4 text-center font-medium text-x text-white">
+        <h1 class="flex items-center justify-center gap-1">
+            Made with <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                    class="w-6 h-6">
+                    <path
+                        d="M11.645 20.91l-.007-.003-.022-.012a15.247 15.247 0 01-.383-.218 25.18 25.18 0 01-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0112 5.052 5.5 5.5 0 0116.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 01-4.244 3.17 15.247 15.247 0 01-.383.219l-.022.012-.007.004-.003.001a.752.752 0 01-.704 0l-.003-.001z" />
+                </svg>
+            </span> by Rutvik & Nikhil
+        </h1>
+    </footer>
+</body>
+<!-- Swiper.js Logic -->
+<script>
+    var swiper = new Swiper(".mySwiper", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        coverflowEffect: {
+            rotate: 20,
+            stretch: 1,
+            depth: 100,
+            modifier: 1,
+            slideShadows: true,
+        },
+        loop: true
+    });
+</script>
+
+</html>

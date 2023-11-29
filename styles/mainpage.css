@@ -1,0 +1,17 @@
+/* Hiding Scrollbar */
+html::-webkit-scrollbar {
+	display: none;
+}
+
+/* Used for Animation */
+.hideElement {
+	opacity: 0;
+	transform: translateY(10%);
+	transition: all 1s;
+}
+
+.showElement {
+	filter: blur(0px);
+	transform: translateY(0%);
+	opacity: 1;
+}
